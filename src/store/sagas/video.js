@@ -2,7 +2,7 @@ import {fork, take, takeEvery, call, all, put} from 'redux-saga/effects';
 import * as api from '../api/youtube-api';
 import * as videoActions from '../actions/video';
 import {REQUEST} from '../actions';
-import {fetchEntity, ignoreErrors} from './index';
+import {fetchEntity} from './index';
 
 
 
@@ -14,9 +14,6 @@ export function* fetchMostPopularVideos() {
 }
 
 
-/******************************************************************************/
-/******************************* WATCHERS *************************************/
-/******************************************************************************/
 export function* watchMostPopularVideos() {
   while (true) {
     //const {amount, loadDescription, nextPageToken} = yield take(videoActions.MOST_POPULAR[REQUEST]);

@@ -1,13 +1,15 @@
 import React from 'react';
 import {Icon, Image, Menu} from "semantic-ui-react";
 import './Subscription.scss';
+import { FaSignal } from "react-icons/fa";
+
 
 export function Subscription(props) {
 
   let rightElement = null;
   const {broadcasting, amountNewVideos} = props;
   if (broadcasting) {
-    rightElement = <Icon name='signal'/>;
+      rightElement = <FaSignal size='20px' color='red'  />;
   } else if (amountNewVideos) {
     rightElement = <span className='new-videos-count'>{amountNewVideos}</span>;
   }
