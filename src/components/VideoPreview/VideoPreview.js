@@ -3,7 +3,7 @@ import {Image} from 'semantic-ui-react';
 import './VideoPreview.scss';
 import { Link } from 'react-router-dom';
 import HoverVideoPlayer from "react-hover-video-player";
-
+import {isMobile } from "../../utils"
 
 export class VideoPreview extends React.Component {
   render() {
@@ -12,14 +12,16 @@ export class VideoPreview extends React.Component {
       return <div/>;
       }
       console.log(video)
-
+      const isMobileDevice = isMobile()
+      const imageClass = 'image-container' + ' ' + (!isMobileDevice ? 'not-mobile' : '')
     return (
       <Link to={{pathname: this.props.pathname, search: this.props.search}}>
             <div className='video-preview'>
-          <div className='image-container'>
+                <div className={imageClass}>
                     <HoverVideoPlayer
                         controls
                         videoSrc={video.video_url}
+                        disableDefaultEventHandling={isMobileDevice}
                         pausedOverlay={
                             <div>
                                 <Image src={video.thumbnail_url} />
