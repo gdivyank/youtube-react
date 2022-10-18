@@ -10474,6 +10474,11 @@ react-hover-video-player@^9.7.1:
   resolved "https://registry.yarnpkg.com/react-hover-video-player/-/react-hover-video-player-9.7.1.tgz#63d291304d54e06827877c4b7bdbe5a0ca9885f7"
   integrity sha512-mC74jCZscPui+vtJUFdwhb6pM+4UQI9ZepzAQKAN8l5sOQRA1AVpiCDl5LoTlnJETYKUc96SKaKsXW5L8Z30AQ==
 
+react-icons@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
+  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
+
 react-is@^16.12.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"

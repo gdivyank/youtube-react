@@ -1,5 +1,7 @@
 import React from 'react';
-import {Form, Icon, Image, Input, Menu} from 'semantic-ui-react';
+import { Form, Icon, Image, Input, Menu } from 'semantic-ui-react';
+import { FaVideo, FaBell } from 'react-icons/fa'
+import { BsFillGrid3X3GapFill, BsFillChatFill } from "react-icons/bs"
 import './HeaderNav.scss';
 import logo from '../../assets/images/logo.jpg';
 import {Link, withRouter} from 'react-router-dom';
@@ -40,16 +42,18 @@ export class HeaderNav extends React.Component {
                     {!isMobileDvice  && <>
                         <Menu.Item>
                             {/* 6 */}
-                            <Icon className='header-icon' name='video camera' size='large' />
+                            <FaVideo  className='header-icon' name='video camera' size='small' size='22px' />
                         </Menu.Item>
                         <Menu.Item>
-                            <Icon className='header-icon' name='grid layout' size='large' />
+                            <BsFillGrid3X3GapFill className='header-icon' name='video camera' size='small' size='22px' />
                         </Menu.Item>
                         <Menu.Item>
-                            <Icon className='header-icon' name='chat' size='large' />
+                            <BsFillChatFill className='header-icon' name='video camera' size='small' size='22px' />
                         </Menu.Item>
                         <Menu.Item>
-                            <Icon className='header-icon' name='alarm' size='large' />
+                            <FaBell className='header-icon' name='video camera' size='small' size='22px' />
+
+                            
                         </Menu.Item>
                         {/* 7*/}
                     </>}
