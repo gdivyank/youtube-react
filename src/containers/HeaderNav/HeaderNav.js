@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Icon, Image, Input, Menu } from 'semantic-ui-react';
-import { FaVideo, FaBell } from 'react-icons/fa'
+import { FaVideo, FaBell, FaSearch } from 'react-icons/fa'
 import { BsFillGrid3X3GapFill, BsFillChatFill } from "react-icons/bs"
 import './HeaderNav.scss';
 import logo from '../../assets/images/logo.jpg';
@@ -58,7 +58,8 @@ export class HeaderNav extends React.Component {
                         {/* 7*/}
                     </>}
                     {isMobileDvice && <Menu.Item>
-                        <Icon className='header-icon-search' name='search' size='large' />
+                        
+                        <FaSearch className='header-icon-search' name='search' size='small' size='22px' />
                     </Menu.Item>}
             <Menu.Item name='avatar' className="avtar">
                         <Image src='https://www.kasandbox.org/programming-images/avatars/mr-pants-green.png' avatar/>
