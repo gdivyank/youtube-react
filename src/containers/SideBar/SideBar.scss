@@ -20,3 +20,9 @@ $sidebar-hover-color: #ebebeb;
 .side-nav.ui.vertical.menu {
   width: $sidebar-left-width;
 }
+
+@media only screen and (max-width: 600px) {
+    .side-nav.ui.vertical.menu {
+        display: none;
+    }
+}

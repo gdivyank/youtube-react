@@ -4,25 +4,61 @@
   we use this rule to tweak the SCSS
 */
 .ui.menu.top-menu {
-  border: none;
-  .logo {
-    width: $sidebar-left-width;
-  }
-  .nav-container {
-    flex-grow: 1;
-    padding: 0;
+    border: none;
+    box-shadow: 0 4px 2px -2px #F4AAB9;
 
-    .search-input {
-      padding-left: 0;
-      width: 33%;
-
-      form {
-        width: 100%;
-      }
+    .logo {
+        width: $sidebar-left-width;
     }
-  }
 
-  .header-icon {
-    color: #a0a0a0;
-  }
+    .nav-container {
+        flex-grow: 1;
+        padding: 0;
+
+        .search-input {
+            padding-left: 0;
+            width: 33%;
+
+            form {
+                width: 100%;
+            }
+        }
+    }
+
+    .header-icon {
+        color: #a0a0a0;
+    }
+
+    .header-icon-search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .ui.menu.top-menu {
+        border: none;
+        box-shadow: 0 4px 2px -2px #F4AAB9;
+
+        .logo {
+            width: 8rem
+        }
+
+        .right-header {
+
+
+            .header-icon {
+                display: none
+            }
+
+            .header-icon-search {
+                display: block;
+                color: black;
+            }
+        }
+    }
+    
+   
 }

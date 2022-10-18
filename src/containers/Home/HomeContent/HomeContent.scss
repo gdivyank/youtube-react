@@ -31,3 +31,8 @@
     max-width: 1344px; /*320 (video preview width) * 4 + 16 (margin) * 4*/
   }
 }
+@media only screen and (max-width: 600px) {
+    .home-content {
+        margin-left: 2rem
+    }
+}
